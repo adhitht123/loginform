@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
+#video{
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#boxcontainer{
+    position: absolute;
+    top: 50px;
+    padding-top: 50px;
+    left: 33.3333vw;
+
+}
+.box{
+ 
+    background: rgba(204, 204, 204,0.4);
+    height: 60vh;
+    width: 33.33333vw;
+    border-top: 5px solid rgba(0, 196, 141,0.4);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#login{
+    color: rgba(255,255,255,0.5);
+    font-size: 15vh;
+}
+.input{
+    border-radius: 2px; 
+    display: block;
+    transition: 0.25s;   
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(51, 173, 255);
+    width: 50%;
+    background: none;
+    top: 25%;
+    height: 25px;
+    margin: 20px;
+    outline: 5px;
+    transition: 0.5s;
+}
+#username{
+    margin-top: 25%;
+
+}
+
+#username:focus, #password:focus{
+    width: 65%;
+    border: 2px solid rgba(0, 196, 141,0.4);
+}
+
+#submit{
+    border-radius: 5px;
+    border: 2px solid rgba(0, 196, 141,0.4);
+    background: none;
+    height: 40px;
+    width: 80px;
+    transition: 0.5s;
+}
+#submit:focus{
+    border: 2px solid rgba(0, 196, 141,0.4);
+    background: rgba(0, 196, 141,0.4);
+}
+
+
+
+
+/*RESPONSIVE PAGE */
+@media (min-aspect-ratio:16/9){
+    #video{
+    width: 100%;
+    height: auto;
+}
+}
+@media (max-aspect-ratio:16/9){
+    #video{
+    width: auto;
+    height: 100%;
+}
+}
+@media and (max-width: 768px);{
+    #video{
+        display: none;
+    }
+    body{
+        background: url(nature.png);
+        background-repeat: no-repeat;
+    }
+
+}
